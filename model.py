@@ -1,6 +1,7 @@
 import numpy as np
 import pickle
 import nltk
+nltk.download('all')
 import config
 from langdetect import detect
 from deep_translator import GoogleTranslator
