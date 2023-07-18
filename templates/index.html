@@ -5,25 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movie Review Classification</title>
 </head>
-<body style="font-size: x-large;">
-    <h1>Movie Review Classification Web Page</h1>
-    
-    Welcome to movie review classification web page
-    <br>
-    This page lets you classify the review into positive and negative
+<body style="background-image: url(https://www.intellectoutsource.com/img/about-us.jpg);background-size: cover;text-align: center;">
+    <h1 style="font-size: xx-large;font-family: Verdana, Geneva, Tahoma, sans-serif;color:darkblue;background-color: azure;">Movie Review Classification Web Page</h1>
+    <div style="color: lightcoral;font-size: x-large;">
+        Welcome to movie review classification web page
+        <br>
+        This page lets you classify the review into positive and negative
+    </div>
     <br>
     <br>
 
-
-    <form action="/predict" method="post">
-        <label for="text">Please type the movie review here:</label>
-        <input type="text" name="text" placeholder="type movie review here">
-        <br>
-        <br>
-        <input type="submit" name="submit">
-        <br>
-        <br>
-        <label >Result: <b>{{prediction}}</b></label>
-    </form>
+    <div style="color: white;font-size: x-large;"> 
+        <form action="/predict" method="post">
+            <label for="text">Please type the movie review here:</label>
+            <br>
+            <br>
+            <textarea name="text" id="text" cols="40" rows="4" style="font-size: large;" placeholder="type movie review here ..."></textarea>
+            <br>
+            <br>
+            <input type="submit" name="submit">
+            <br>
+            <br>
+            <label >Result: <b>{{prediction}}</b></label>
+        </form>
+    </div>
 </body>
 </html>
