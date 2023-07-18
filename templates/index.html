@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Review Classification</title>
+</head>
+<body style="font-size: x-large;">
+    <h1>Movie Review Classification Web Page</h1>
+    
+    Welcome to movie review classification web page
+    <br>
+    This page lets you classify the review into positive and negative
+    <br>
+    <br>
+
+
+    <form action="/predict" method="post">
+        <label for="text">Please type the movie review here:</label>
+        <input type="text" name="text" placeholder="type movie review here">
+        <br>
+        <br>
+        <input type="submit" name="submit">
+        <br>
+        <br>
+        <label >Result: <b>{{prediction}}</b></label>
+    </form>
+</body>
+</html>
